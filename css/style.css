@@ -1,0 +1,75 @@
+html,
+body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../images/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 64px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+h1{
+    /* font-family: 'Merriweather', serif; */
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.home-bg{
+    height: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.home-bg .content{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    transition: ease-in .5s all;
+    top: 240px;
+}
+
+.home-bg .content.page-head-scrolled{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 60px;
+    
+}
+
+
+.highlight{
+    color: #0D47A1;
+}
+
+section{
+    height: 100%;
+}
+
+
+
+
