@@ -2,6 +2,9 @@ html,
 body{
     margin: 0;
     height: 100%;
+}
+
+body{
     font-family: 'Open Sans', sans-serif;
     background-image: url('../images/1.png');
     background-size: cover;
@@ -10,16 +13,19 @@ body{
     background-attachment: fixed;
 }
 
+
 .main-title{
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 44px;
     margin-bottom: 0px;
-    margin-top: 0;
+    margin-top: 6px;
 }
 
 h1{
     /* font-family: 'Merriweather', serif; */
+    font-family: 'Roboto Slab', serif;
+    
 }
 
 h2{
@@ -27,48 +33,206 @@ h2{
 }
 
 h3{
-
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 28px;
 }
 
 p{
-    font-size: 24px;
-    margin-top: 0;
+  
 }
 
-.home-bg{
-    height: 100%;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-    margin: 0;
-    padding: 0;
-    position: relative;
+@media (min-width: 1200px){
+.container {
+    max-width: 920px;
 }
 
-.home-bg .content{
-    text-align: center;
-    position: fixed;
+}
+
+.logo{
+    width: 170px;
+    margin: auto;
+    height: 100px;
+}
+
+.logo img{
     width: 100%;
-    transition: ease-in .5s all;
-    top: 240px;
 }
 
-.home-bg .content.page-head-scrolled{
+.content{
+    text-align: center;
+    -webkit-transition: all 1s cubic-bezier(.42, 0, .58, 1); 
+    -moz-transition: all 1s cubic-bezier(.42, 0, .58, 1); 
+}
+
+
+.content.page-head-scrolled{
     position: fixed;
     text-align: center;
     width: 100%;
-    top: 60px;
+    top: 70px;
+    
+}
+.content  .main-title{
+    -webkit-transition: all 1s cubic-bezier(.42, 0, .58, 1); 
+    -moz-transition: all 1s cubic-bezier(.42, 0, .58, 1); 
+}
+
+
+.content.page-head-scrolled .main-title{
+    font-size: 46px;
     
 }
 
+.content p{
+    font-size: 20px;
+    margin-top: 4px;
+    color: #595959;
+    -webkit-transition: all 1s cubic-bezier(.42, 0, .58, 1); 
+    -moz-transition: all 1s cubic-bezier(.42, 0, .58, 1); 
+}
+
+
+.content.page-head-scrolled p{
+    font-size: 20px;
+    
+}
 
 .highlight{
     color: #0D47A1;
 }
 
 section{
-    height: 100%;
+    padding: 48px 0;
+    padding: 10px 0;
+    padding-bottom: 20px;
 }
+
+
+.domain{
+    height: 542px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+    text-decoration: none;
+}
+
+.domain:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.domain::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.24); */
+    background-color: rgba(160, 197, 255, 0.21);
+    position: relative;
+    z-index: 0;
+}
+
+.domain .contents{
+    padding: 12px;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    min-height: 128px;
+    background-color: rgba(39, 49, 64, 0.7607843137254902);
+    position: relative;
+}
+
+.domain .contents span{
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: -2px;
+    display: block;
+
+}
+
+.domain .contents h1{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.domain .contents p{
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1370px) {
+    .domain{
+        height: 392px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .domain{
+        height: 280px;
+        margin-bottom: 14px;
+    }
+
+    .main-title{
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .dom-3 {
+        background-position: bottom !important;
+    }
+
+}
+
+.dom-1{
+    background-image: url('../images/rice2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dom-2{
+    background-image: url('../images/log1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dom-3{
+    background-image: url('../images/c1.jpg');
+    background-size: cover;
+    background-position: -155px bottom;
+    background-repeat: no-repeat;
+}
+
+.home-contact{
+    text-align: center;
+}
+.home-contact h3{
+    color: #595959;
+}
+
+.home-contact h2{
+    text-align: center;
+    font-size: 28px;
+}
+
+.home-contact a.email{
+    font-size: 20px;
+    color: #0d47a1;
+    text-decoration: none;
+}
+
+.animated{
+    animation-delay: 0.5s;
+}
+
+
+
 
 
 
